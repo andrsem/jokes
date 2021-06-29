@@ -9,17 +9,19 @@ class JokeCard extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final joke = ref.watch(jokeProvider);
-    return Center(
-      child: Card(
-        margin: const EdgeInsets.symmetric(horizontal: 20),
-        shape: BeveledRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
-        color: getCardColor().withOpacity(0.85),
-        child: SizedBox(
-          width: double.infinity,
-          child: Padding(
-            padding: const EdgeInsets.all(18),
+
+    return Card(
+      margin: const EdgeInsets.symmetric(horizontal: 20),
+      shape: BeveledRectangleBorder(
+        borderRadius: BorderRadius.circular(20),
+      ),
+      color: getCardColor().withOpacity(0.85),
+      child: Container(
+        constraints:
+            const BoxConstraints(minWidth: double.infinity, minHeight: 200),
+        child: Padding(
+          padding: const EdgeInsets.all(18),
+          child: Center(
             child: Column(
               children: [
                 Text(

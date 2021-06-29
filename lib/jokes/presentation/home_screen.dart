@@ -10,6 +10,7 @@ class HomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     ref.watch(jokeProvider);
+
     return Scaffold(
       body: Container(
         decoration: getCircularGradient(),
