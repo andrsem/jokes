@@ -13,7 +13,7 @@ class APIService {
     'x-rapidapi-key': apiKey,
   };
 
-  Future<Map<String, dynamic>> get({
+  static Future<Map<String, dynamic>> get({
     required String endpoint,
   }) async {
     final uri = Uri.https(_baseUrl, endpoint);
