@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:jokes/common/helpers.dart';
+import '../../../common/helpers.dart';
 import '../../../common/providers.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -57,6 +57,7 @@ class HomeScreen extends ConsumerWidget {
                   await jokeNotifier.fetchJoke();
                 },
                 style: ElevatedButton.styleFrom(
+                  onPrimary: getButtonTextColor(),
                   primary: getButtonColor(),
                   shape: BeveledRectangleBorder(
                     borderRadius: BorderRadius.circular(70),

@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'dart:ui';
 
 int _next(int min, int max) {
@@ -14,6 +13,9 @@ Color getScaffoldColor() =>
 
 Color getButtonColor() =>
     Color.fromARGB(255, _next(0, 80), _next(0, 80), _next(0, 80));
+
+Color getButtonTextColor() =>
+    Color.fromARGB(255, _next(140, 235), _next(140, 235), _next(140, 235));
 
 Color getCardColor() =>
     Color.fromARGB(255, _next(235, 255), _next(235, 255), _next(235, 255));
