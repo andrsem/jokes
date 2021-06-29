@@ -4,7 +4,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 import '../data/joke.dart';
-import 'config/config.dart';
+import 'common.dart';
 
 class APIService {
   static const String _baseUrl = 'dad-jokes.p.rapidapi.com';

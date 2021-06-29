@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../common/api_service.dart';
+import '../../common/common.dart';
 import '../../data/joke.dart';
 
 class JokeNotifier extends StateNotifier<Joke> {
