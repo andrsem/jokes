@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:jokes/common/helpers.dart';
 import '../../../common/providers.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -12,18 +13,19 @@ class HomeScreen extends ConsumerWidget {
     final joke = ref.watch(jokeProvider);
     final jokeNotifier = ref.read(jokeProvider.notifier);
     return Scaffold(
-      backgroundColor: const Color.fromARGB(230, 140, 40, 90),
+      backgroundColor: getScaffoldColor(),
       body: SafeArea(
         child: Center(
           child: Column(
             children: [
               const Spacer(),
               Card(
+                elevation: 3,
                 margin: const EdgeInsets.symmetric(horizontal: 20),
                 shape: BeveledRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                color: Colors.amber.shade50,
+                color: getCardColor(),
                 child: SizedBox(
                   width: double.infinity,
                   child: Padding(
@@ -51,9 +53,17 @@ class HomeScreen extends ConsumerWidget {
               ),
               const Spacer(),
               ElevatedButton(
-                onPressed: () async => jokeNotifier.fetchJoke(),
+                onPressed: () async {
+                  await jokeNotifier.fetchJoke();
+                },
+                style: ElevatedButton.styleFrom(
+                  primary: getButtonColor(),
+                  shape: BeveledRectangleBorder(
+                    borderRadius: BorderRadius.circular(70),
+                  ),
+                ),
                 child: const Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 25),
+                  padding: EdgeInsets.symmetric(horizontal: 50, vertical: 25),
                   child: Text(
                     'get random joke',
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
