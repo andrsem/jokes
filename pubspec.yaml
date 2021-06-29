@@ -3,7 +3,7 @@ description: A jokes app
 
 publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
-version: 0.0.1+1
+version: 0.0.2
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -11,13 +11,20 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.3
   flutter_riverpod: 1.0.0-dev.2
   http: ^0.13.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+  flutter_launcher_icons: ^0.9.0
+
+flutter_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: "assets/icon/jester-hat.png"
 
 flutter:
   uses-material-design: true
