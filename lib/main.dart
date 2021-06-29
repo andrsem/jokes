@@ -1,22 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:jokes/home_page.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'app.dart';
 
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp();
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Jokes Hub',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-      ),
-      home: const HomePage(title: 'Jokes'),
-    );
-  }
+  runApp(const ProviderScope(child: App()));
 }
