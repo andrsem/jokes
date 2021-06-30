@@ -1,6 +1,6 @@
 # Jokes
 
-A jokes app
+<img src="/images/jokes.jpg" alt="drawing" width="200"/>
 
 ## Getting Started
 
