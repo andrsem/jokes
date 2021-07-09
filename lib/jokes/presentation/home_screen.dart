@@ -5,7 +5,7 @@ import '../../common/common.dart';
 import 'widgets/widgets.dart';
 
 class HomeScreen extends ConsumerWidget {
-  const HomeScreen();
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

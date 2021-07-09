@@ -4,7 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../common/common.dart';
 
 class JokeCard extends ConsumerWidget {
-  const JokeCard();
+  const JokeCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

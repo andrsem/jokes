@@ -5,7 +5,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import '../../../common/common.dart';
 
 class JokeButton extends HookConsumerWidget {
-  const JokeButton();
+  const JokeButton({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

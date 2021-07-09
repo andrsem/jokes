@@ -82,7 +82,7 @@ packages:
       name: flutter_hooks
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.17.0"
+    version: "0.18.0"
   flutter_launcher_icons:
     dependency: "direct dev"
     description:
@@ -90,13 +90,22 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.9.0"
+  flutter_linter:
+    dependency: "direct dev"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: e3b2b2f8022c5b54ccb1ad6359ce073c0b3bd761
+      url: "https://github.com/andrsem/flutter_linter"
+    source: git
+    version: "0.0.2"
   flutter_riverpod:
     dependency: transitive
     description:
       name: flutter_riverpod
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0-dev.2"
+    version: "1.0.0-dev.5"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -115,7 +124,7 @@ packages:
       name: hooks_riverpod
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0-dev.2"
+    version: "1.0.0-dev.5"
   http:
     dependency: "direct main"
     description:
@@ -185,7 +194,7 @@ packages:
       name: riverpod
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.0-dev.2"
+    version: "1.0.0-dev.5"
   sky_engine:
     dependency: transitive
     description: flutter
